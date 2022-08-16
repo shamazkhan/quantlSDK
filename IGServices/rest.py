@@ -10,8 +10,8 @@ import json
 import pandas as pd
 import numpy as np
 from datetime import timedelta, datetime
-from IGServices.utils import _HAS_PANDAS, _HAS_MUNCH
-from IGServices.utils import conv_resol, conv_datetime, conv_to_ms, DATE_FORMATS, munchify
+from utils import _HAS_PANDAS, _HAS_MUNCH
+from utils import conv_resol, conv_datetime, conv_to_ms, DATE_FORMATS, munchify
 from tenacity import Retrying
 
 

@@ -1,12 +1,12 @@
 import logging
 import requests
-from IGServices.rest import IGService
+from rest import IGService
 import sys
-from IGServices.config.trade_ig_config import config
-from IGServices.IG_trade import IGtrade
-from IGServices.rest import IGService
-from IGServices.stream import IGStreamService
-from IGServices.lightstreamer import LSClient, Subscription
+from config.trade_ig_config import config
+from IG_trade import IGtrade
+from rest import IGService
+from stream import IGStreamService
+from lightstreamer import LSClient, Subscription
 import pandas as pd
 import time
 
@@ -15,7 +15,7 @@ logger.setLevel(logging.DEBUG)
 
 # if you need to cache to DB your requests
 from datetime import timedelta
-import requests_cache
+
 
 sys.path.append('/...IGServices/config')
 

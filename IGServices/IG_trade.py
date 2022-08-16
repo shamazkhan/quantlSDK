@@ -1,8 +1,8 @@
 import logging
 import requests
-from IGServices.rest import IGService
+from rest import IGService
 import sys
-from IGServices.config.trade_ig_config import config
+from config.trade_ig_config import config
 
 
 logger = logging.getLogger(__name__)
@@ -10,7 +10,6 @@ logger.setLevel(logging.DEBUG)
 
 # if you need to cache to DB your requests
 from datetime import timedelta
-import requests_cache
 
 sys.path.append('/...IGServices/config')
 
